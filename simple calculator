@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, b, option;
+    printf("enter a = ");
+    scanf("%d", &a);
+
+    printf("enter b = ");
+    scanf("%d", &b);
+
+    printf("enter option =");
+    scanf("%d", &option);
+
+    switch (option)
+    {
+    case 1:
+        printf("sum is %d", a + b);
+        break;
+
+    case 2:
+        printf("difference is %d", a - b);
+        break;
+
+    case 3:
+        printf("product is %d", a * b);
+        break;
+
+    case 4:
+        if (b != 0)
+        {
+            printf("quotient is %d", a / b);
+        }
+        else
+        {
+            printf("divison by 0 is not possible");
+            break;
+        default:
+            printf("error");
+            break;
+        }
+    }
+    return 0;
+}
